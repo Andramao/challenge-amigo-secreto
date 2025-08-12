@@ -1,7 +1,9 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-let amigos = []
+let amigos = [];
 let nombreDeAmigo = " ";
+let amigoSecreto = "";
+let amigosSorteados = [];
 
 function agregarAmigo() {
 
@@ -46,7 +48,7 @@ function mostrarListaAmigos() {
 };
 
 // Configurar dos eventos, al dar click en boton o al digitar enter agregar amigo.
-document.querySelector('.button-add').addEventListener('click', agregarAmigo);
+//document.querySelector('.button-add').addEventListener('click', agregarAmigo());
 document.getElementById('amigo').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         agregarAmigo();
@@ -54,3 +56,35 @@ document.getElementById('amigo').addEventListener('keydown', function(event) {
 });
 
 
+function sortearAmigo(){
+    if (amigos.length === 0) {
+        document.getElementById('resultado')
+        resultado.innerHTML = 'No hay amigos para sortear.';
+        return;
+    }
+
+    if (amigosSorteados.length === amigos.length) {
+        resultado.innerHTML = '¡Todos los amigos ya han sido sorteados!';
+        console.log('Todos los amigos ya han sido sorteados.');
+        return;
+    }
+
+    let sorteoAmigos = Math.floor(Math.random()*amigos.length);
+    amigoSecreto = amigos[sorteoAmigos];
+    
+    
+    if (amigosSorteados.includes (amigoSecreto)){
+        return sortearAmigo();
+
+    }else{
+        
+        console.log(`¡Tu amigo secreto es: ${amigoSecreto}!`);
+        document.getElementById('resultado')
+        resultado.innerHTML = (`¡Tu amigo secreto es: ${amigoSecreto}!`);
+        console.log(amigosSorteados);
+        amigosSorteados.push(amigoSecreto);
+    }
+    
+   
+    
+}
