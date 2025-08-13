@@ -3,7 +3,8 @@
 <p align="center">¡Bienvenido a la aplicación de sorteo de amigo secreto! Esta herramienta simple y sin distracciones te permite gestionar 
   tu sorteo y asegurarte de que no se repitan los nombres.</p>
   
-<div align="center"><img width="413" height="300" alt="image" src="https://github.com/user-attachments/assets/10f2bc60-f398-489b-8acd-18857c974809" />
+<div align="center"><img width="327" height="287" alt="image" src="https://github.com/user-attachments/assets/59eba324-e3ce-497e-8713-3baba521093f" />
+
 </div>  
   
 <h3 align="center">🚀 ¿Cómo Usar la Aplicación?</h3>
@@ -12,7 +13,8 @@
   <li>Agrega a tus amigos: En el campo de texto, escribe el nombre de una persona y presiona el botón "Agregar" o la tecla Enter. 
     Verás cómo el nombre aparece inmediatamente en la lista.</li>
   
-  <br><div align="center"><img width="403" height="343" alt="image" src="https://github.com/user-attachments/assets/f3c14a73-1c5e-4056-9a50-a4e5a386a8f4" /></div>
+  <br><div align="center"><img width="338" height="293" alt="image" src="https://github.com/user-attachments/assets/36b54518-839e-4d89-b7c4-62e0cf930ca5" />
+</div>
 
   <li>Si intentas agregar un nombre vacío o uno que ya existe, la aplicación te lo notificará en la consola de tu navegador.</li><br>
   <li>Inicia el Sorteo: Una vez que tengas a todos los participantes en la lista, presiona el botón "Sortear".</li>
@@ -25,7 +27,8 @@
   <li>El nombre del amigo secreto se mostrará en la parte inferior de la pantalla.</li></ol>
   <br>
 
-<div align="center"><img  width="393" height="353" alt="image" src="https://github.com/user-attachments/assets/5a450ec0-1db7-4db9-bbf5-ce3b068bc29a" /> <br>
+<div align="center"><img width="317" height="335" alt="image" src="https://github.com/user-attachments/assets/a6f64aaa-d45d-44d1-8b57-76d6c2e8a457" />
+ <br>
 </div>
 
 
