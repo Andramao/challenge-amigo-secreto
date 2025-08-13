@@ -20,7 +20,7 @@ function agregarAmigo() {
             amigos.push(nombreDeAmigo);
             mostrarListaAmigos();
         }
-        console.log(amigos);        
+        //console.log(amigos);        
        
     }
     limpiarInput();
@@ -31,23 +31,21 @@ function limpiarInput() {
 
 }
 
-
-
 function mostrarListaAmigos() {
     const lista = document.getElementById('listaAmigos');
-    // Limpiar la lista existente
+    // Limpiar contenido en la lista existente
     lista.innerHTML = '';
     
-    // Construir el HTML de la lista con un bucle for
+    // Construir el contenido para agregar a la lista con un bucle for
     let htmlListItems = '';
     for (let i = 0; i < amigos.length; i++) {
         htmlListItems += `<li>${amigos[i]}</li>`;
     }
-    // Asignar el HTML construido a la lista
+    // Agregar el construido en el Html a la lista
     lista.innerHTML = htmlListItems;
 };
 
-// Configurar dos eventos, al dar click en boton o al digitar enter agregar amigo.
+// Configura dos eventos, al dar click en boton o al digitar enter agrega amigo.
 //document.querySelector('.button-add').addEventListener('click', agregarAmigo());
 document.getElementById('amigo').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -58,18 +56,20 @@ document.getElementById('amigo').addEventListener('keydown', function(event) {
 
 function sortearAmigo(){
     if (amigos.length === 0) {
+        //hace el llamado al elemento resultado <ul>
         document.getElementById('resultado')
         resultado.innerHTML = 'No hay amigos para sortear.';
         return;
     }
-
+        //controla que no se repita ningun nombre en el sorteo
     if (amigosSorteados.length === amigos.length) {
         resultado.innerHTML = '¡Todos los amigos ya han sido sorteados!';
-        console.log('Todos los amigos ya han sido sorteados.');
+        //console.log('Todos los amigos ya han sido sorteados.');
         return;
     }
-
+        //sortea y escoge una posicion dentro de la lista amigos
     let sorteoAmigos = Math.floor(Math.random()*amigos.length);
+        //alimenta la variable amigoSecreto con el contenido de la posicion resultante de sortearAmigos
     amigoSecreto = amigos[sorteoAmigos];
     
     
@@ -78,13 +78,12 @@ function sortearAmigo(){
 
     }else{
         
-        console.log(`¡Tu amigo secreto es: ${amigoSecreto}!`);
+        //console.log(`¡Tu amigo secreto es: ${amigoSecreto}!`);
         document.getElementById('resultado')
         resultado.innerHTML = (`¡Tu amigo secreto es: ${amigoSecreto}!`);
-        console.log(amigosSorteados);
-        amigosSorteados.push(amigoSecreto);
+        //console.log(amigosSorteados);
+        amigosSorteados.push(amigoSecreto);//agrega cada amigo sorteado a la lista amigosSorteados
     }
     
-   
-    
+       
 }
