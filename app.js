@@ -13,6 +13,10 @@ function agregarAmigo() {
         alert('Por favor, inserte un nombre.');
 
     }else{
+        // Capitalizar el nombre antes de agregarlo
+        if (nombreDeAmigo.length > 0) {
+            nombreDeAmigo = nombreDeAmigo.charAt(0).toUpperCase() + nombreDeAmigo.slice(1).toLowerCase();
+        }
 
         if (amigos.includes(nombreDeAmigo)){
             alert('nombre repetido, ingrese otro nombre por favor');
